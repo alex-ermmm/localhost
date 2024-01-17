@@ -1,6 +1,7 @@
 <? ini_set('display_errors', '1');?>
 
 <h2> домашнее задание #1 </h2>
+
 <h3>Задание #1</h3>
 <?
 $name = "Александр";
@@ -25,4 +26,23 @@ define("PENCIL_PICTURES", 40);
 
 $paint_picture = TOTAL_PICTURES - MARKERS_PICTURES - PENCIL_PICTURES;
 echo "<p>". $paint_picture . " рисунков, выполненные красками, на школьной выставке. </p>";
+echo "<p> ---------------------------------------- </p>";
+?>
+<h2> Задание #3 </h2>
+<?
+$age = rand(1,100);
+
+echo $age;
+
+
+if ($age > 18 && $age < 65){
+	echo "<p> Вам еще работать и работать </p>";
+} elseif ($age > 65) {
+    echo "<p>Вам пора на пенсию </p>";
+}elseif ($age <= 17) {
+    echo "<p>Вам ещё рано работать </p>";
+} else {
+    echo "<p>Неизвестный возраст</p>";
+}
+
 echo "<p> ---------------------------------------- </p>";
